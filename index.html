@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provably Fair System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Provably Fair System</h1>
+
+    <!-- Server Seed Section -->
+    <div>
+        <label for="server-seed">Server Seed (Hashed):</label>
+        <input type="text" id="server-seed" readonly>
+    </div>
+
+    <!-- Client Seed Section -->
+    <div>
+        <label for="client-seed">Client Seed:</label>
+        <input type="text" id="client-seed" placeholder="Enter your seed">
+    </div>
+
+    <!-- Nonce Section -->
+    <div>
+        <label for="nonce">Nonce:</label>
+        <input type="number" id="nonce" value="1">
+    </div>
+
+    <!-- Result Section -->
+    <button id="generate-result">Generate Result</button>
+    <p id="result"></p>
+
+    <!-- Verification Section -->
+<div>
+    <h2>Verify Game Result</h2>
+    <label for="original-server-seed">Server Seed (Original):</label>
+    <input type="text" id="original-server-seed" placeholder="Enter revealed server seed">
+
+    <label for="verify-client-seed">Client Seed:</label>
+    <input type="text" id="verify-client-seed" placeholder="Enter client seed">
+
+    <label for="verify-nonce">Nonce:</label>
+    <input type="number" id="verify-nonce" value="1">
+
+    <button id="verify-result">Verify Result</button>
+    <p id="verification-result"></p>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
